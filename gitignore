@@ -1,0 +1,13 @@
+# API keys — NEVER commit this file
+config.json
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Editor directories
+.idea/
+.vscode/
