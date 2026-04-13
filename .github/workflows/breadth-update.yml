@@ -3,7 +3,7 @@ name: Update Breadth Baseline
 on:
   schedule:
     # Run at 00:30 UTC (8:30 PM ET / 5:30 PM PT) — after US market close
-    - cron: '30 0 * * 1-6'   # Mon-Sat (covers Mon-Fri market days + Sunday night for clean Monday open)
+    - cron: '30 0 * * *'     # Every day — weekends are no-ops (no new data) but keep baseline timestamp fresh
   workflow_dispatch:          # Allow manual trigger from GitHub UI
 
 permissions:
